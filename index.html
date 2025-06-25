@@ -123,15 +123,15 @@ Auto play</button>
           }
 
           document.querySelector('.js-rock-button').addEventListener('click',() => {
-            playgame('Rock');
+            playgame('rock');
           });
 
           document.querySelector('.js-paper-button').addEventListener('click',() => {
-            playgame('Paper');
+            playgame('paper');
           });
 
           document.querySelector('.js-scissors-button').addEventListener('click',() => {
-            playgame('Scissors');
+            playgame('scissors');
           });
 
           document.querySelector('.js-reset-button').addEventListener('click',() => {
@@ -159,11 +159,11 @@ Auto play</button>
 
           document.body.addEventListener('keydown',(event)=>{
             if (event.key === 'r' || event.key === 'R') {
-                playgame('Rock');
+                playgame('rock');
             } else if (event.key === 'p' || event.key === 'P') {
-                playgame('Paper');
+                playgame('paper');
             } else if (event.key === 's' || event.key === 'S') {
-                playgame('Scissors');
+                playgame('scissors');
             } else if (event.key === 'a' || event.key === 'A') {
                 autoPlay();
             }else if( event.key === 'Backspace'|| event.key === 'Delete') {
